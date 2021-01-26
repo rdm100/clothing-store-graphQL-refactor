@@ -3,7 +3,6 @@ import FormInput from '../form-input/form-input';
 import CustomButton from '../custom-button/custom-button';
 import { auth, createUserProfileDocument } from '../../firebase/firebase.utils';
 import './sign-up.scss';
-import { canConstructReadableStream } from 'workbox-core/_private';
 
 class SignUp extends Component {
   constructor(props) {

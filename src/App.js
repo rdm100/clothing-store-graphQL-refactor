@@ -17,7 +17,7 @@ class App extends React.Component {
   }
 
   unsubscribeFromAuth = null;
-//async here as  making request to firestore database
+//async here as making request to firestore database
   componentDidMount() {
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
@@ -32,7 +32,6 @@ class App extends React.Component {
            }, () => {
             console.log(this.state);
            })
-           console.log(this.state);
         });
       } else {
         this.setState({currentUser: userAuth});
