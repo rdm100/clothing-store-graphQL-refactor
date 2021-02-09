@@ -15,7 +15,10 @@ class App extends React.Component {
 //async here as making request to firestore database
   componentDidMount() {
     const { setCurrentUser } = this.props;
-
+// unsubscribeFromAuth is reassigned to the return value of calling auth.onAuthStateChanged()
+// this method returns another method: firebase.unsubscribe().
+// so when unsubscribeFromAuth() is called inside the componentWillUnmount, 
+// it now has the value of firebase.unsubscribe(), which executes, closing the session.
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
