@@ -4,21 +4,21 @@ Once cloned or downloaded, use npm install command in the terminal at root level
 
 ## Brief
 
-Create clothing store using React and Redux, using Firebase for authentication, Memoization for performance and stripe for payments.
-Will be adding styled components and using graphQL and Apollo.
+Refactor clothing store with basket to add and remove items as well as taking payments with GraphQL and Apollo.
+
+Using React, GraphQL, Apollo, apollo-boost, SASS
 
 # Project Title
 
 Clothing store
 
 
-<img src="images/clothing-store.png">
+<img src="public/images/clothing-store.png">
 
-## Running the tests
 
-In the terminal run npm test
+<img src="public/images/clothing-store2.png">
 
 
 ## Built With
 
-JavaScript, React, SASS, Firebase
+JavaScript, React, GraphQL, Apollo, apollo-boost, SASS
