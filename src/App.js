@@ -7,7 +7,7 @@ import { setCurrentUser } from "./redux/user/user-actions";
 import { createStructuredSelector } from 'reselect';
 import Homepage from './pages/homepage/homepage.jsx';
 import Shop from './pages/shop/shop.jsx';
-import Header from './components/header/header.jsx';
+import { default as Header } from './components/header/header-container';
 import SignInAndSignUp from './pages/sign-in-and-sign-up/sign-in-and-sign-up.jsx';
 import CheckOut from './pages/checkout/checkout.jsx';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
