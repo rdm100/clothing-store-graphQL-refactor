@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter } from "react-router-dom";
-import CollectionItem from '../collection-item/collection-item.jsx';
+import { default as CollectionItem } from '../collection-item/collection-item-container';
 import './collection-preview.scss';
 
 const CollectionPreview = ({ title, items, history, match }) => {
